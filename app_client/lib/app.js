@@ -1,0 +1,10 @@
+(function(){
+    angular.module('webapp',['ngRoute'])
+    .config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider){
+        $routeProvider
+        .when('/',{
+            templateUrl:'./home/home.html'
+        })
+        .otherwise({redirectTo:'/'})
+    }]);
+})();

@@ -1,0 +1,9 @@
+(function(){
+    angular.module('webapp')
+    .directive('navigation',function(){
+        return{
+            restrict:'EA',
+            templateUrl:'./common/directives/navigation/navigation.html'
+        }
+    });
+})();
