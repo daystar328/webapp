@@ -372,3 +372,46 @@ div#app-info {
     padding:0.4rem;
     padding-left:0.5rem;
 }
+
+#tweet-modal .char-count{
+    padding:0.7rem 0;
+}
+
+#message-modal .btn-message {
+    position:absolute;
+    right:3em;
+    top:0.75em;
+
+}
+
+#message-modal .modal-body {
+    max-height: 32rem;
+    overflow:auto;
+}
+
+#message-modal li {
+    padding:0.75rem;
+    border-bottom:0.1rem solid #E6E6E6;
+}
+
+#message-modal li:hover {
+    background-color:none;
+}
+
+#message-modal li a:hover {
+    text-decoration: none;
+}
+
+#message-modal li img {
+    max-width:15%;
+}
+
+#message-modal .msg-content {
+    display: inline-block;
+    color:#000;
+}
+
+#message-modal .msg-content h5{
+    font-size: 1em;
+    font-weight:bold;
+}

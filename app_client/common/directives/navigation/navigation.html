@@ -21,12 +21,12 @@
                     <span class="glyphicon glyphicon-bell"></span>Notification</a>
             </li>
             <li>
-                <a href="#"><span class="glyphicon glyphicon-envelope"></span>Message</a>
+                <a href="#" data-toggle="modal" data-target="#message-modal"><span class="glyphicon glyphicon-envelope"></span>Message</a>
             </li>
             <li class="visible-xs-inline"></span><a href="#"><span class="glyphicon glyphicon-user">Profile</a></li>
             <li class="visible-xs-inline"><a href="#"><span class="glyphicon glyphicon-off">Logout</span></a></li>
         </ul>
-        <button id="tweet" class="btn btn-default pull-right hidden-xs">
+        <button id="tweet" class="btn btn-default pull-right hidden-xs" data-toggle="modal" data-target="#tweet-modal">
             <span class="glyphicon glyphicon-pencil"></span>Tweet
         </button>
         <div id="nav-option" class="btn-group pull-right">
@@ -48,3 +48,74 @@
         </form>
     </div>    
 </nav>
+
+<div class="modal fade" id="tweet-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+                <h4 class="modal-title">Dog a new tweet</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <textarea class="form-control" rows="4" maxlength="140" placeholder="What do you want to bark"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <span class="char-count pull-left" data-max="140">140</span>
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    CLose
+                </button>
+                <button type="button" class="btn btn-primary">
+                    Tweet
+                </button>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div class="modal-fade" id="message-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <h4 class="modal-title">Dog messages</h4>
+            <button type="button" class="btn btn-primary btn-message">New Message</button>
+            <div class="modal-body">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">
+                            <img src="" class="img-circle">
+                            <div class="msg-content">
+                                <h5>Laika<small>@spacesog</small></h5>
+                                <p>Hey Johnny how is down there?</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="" class="img-circle">
+                            <div class="msg-content">
+                                <h5>Cat<small>@crazycat</small></h5>
+                                <p>You will never catch me!</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="" class="img-circle">
+                            <div class="msg-content">
+                                <h5>Laika<small>@spacesog</small></h5>
+                                <p>I think I saw you in Jupiter! Have you been there recently?</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
