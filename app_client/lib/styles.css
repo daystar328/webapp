@@ -171,3 +171,204 @@ form#new-message {
 form .input-group-addon {
     background-color:#FFF;
 }
+
+ul#feed {
+    margin:0;
+}
+
+ul#feed li {
+    padding:1em 1em;
+}
+
+ul#feed .feed-avatar {
+    width:13%;
+    display:inline-block;
+    vertical-align:top;
+}
+
+u#feed .feed-post {
+    width:80%;
+    display:inline-block;
+    margin-left:2%;
+}
+
+ul#feed .feed-post h5 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+ul#feed .feed-post h5 > small {
+    font-size:1.2rem;
+}
+
+ul#feed .action-list {
+    margin-left: 13%;
+    padding-left: 1em;
+}
+
+ul#feed .action-list a {
+    width:15%;
+    display:inline-block;
+}
+
+ul#feed .action-list a:hover {
+    text-decoration:none;
+}
+
+ul#feed .action-list .retweet-count {
+    padding-left:2em;
+    font-weight:bold;
+}
+
+ul#feed li {
+    padding:1em 1em;
+    border-bottom:0.1rem solid #E5E5E5;
+}
+
+ul#feed li:last-child {
+    border-bottom:none;
+}
+
+div#who-follow li{
+    margin-bottom: 2em;
+}
+
+div#who-follow li:last-child {
+    margin-bottom:0;
+}
+
+div#who-follow img {
+    width:26%;
+    display:inline-block;
+    vertical-align:top;
+    margin-left;2%
+}
+
+div#who-follow li .info{
+    width:68%;
+    display:inline-block;
+}
+
+div#who-follow li .info strong {
+    display:block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+div#who-follow lu .info .glyphicon {
+    color:#2F92CA;
+}
+
+.card .card-footer {
+    border-radius: 0 0 0.4rem 0.4rem;
+    padding:0.75rem 1.25rem;
+    background-color:#F5F5F5;
+    border-top:0.1em solid #E5E5E5;
+    color:#4E5665;
+}
+
+div#app-info {
+    margin-top: 2rem;
+}
+
+.alert h3 {
+    margin:0 0 1rem;
+    font-size:1.4em;
+}
+
+.progress-bar.active {
+    animation: progress-bar-stripes 2s linear infinite;
+}
+
+@keyframes progress-bar-stripes {
+    from {
+        background-position:40px 0;
+    }
+    
+    to {
+        background-position:0 0;
+    }
+}
+
+@keyframes w70 {
+    from{
+        width:0%;
+    }
+    to {
+        width:70%;
+    }
+}
+
+.progress-bar.active {
+    animation:w70 1s ease forwards,
+        progress-bar-stripes 2s linear infinite;
+}
+.alert{
+    border-left-width:0.5rem;
+}
+
+#profile-setting.card {
+    margin-top:2em;
+}
+
+#profile-setting .nav-stacked li {
+    border-bottom:1px solid #E5E5E5;
+    margin:0;
+}
+
+#profile-setting .nav-stacked a {
+    border-radius:0;
+}
+
+#profile-setting .nav.stacked li:first-child {
+    border-radius:0.4rem 0.4rem 0 0;
+}
+
+#profile-setting .nav-stacked li:last-child {
+    border-bottom:0;
+}
+
+#profile-setting .nav-stacked li:last-child a {
+    border-radius: 0 0 0.4rem 0.4rem;
+}
+
+#account-tabs > li {
+    border-bottom:0.1rem solid #E5E5E5;
+}
+
+#account-tabs > a {
+    border-bottom:0;
+}
+
+#account-tabs li.active {
+    border-bottom:0;
+}
+
+#main .tab-content {
+    padding: 2em;
+    margin-top: -0.1rem;
+}
+
+#account-tabs > li {
+    border-bottom:0;
+}
+
+#account-tabs {
+    position:relative;
+    z-index:99;
+}
+
+.list-group-item {
+    border-color:#E5E5E5;
+}
+
+#right-content .list-group .label {
+    float:right;
+    padding:0.3rem 0.6rem;
+}
+
+#right-content .list-group .badge.glyphicon-star {
+    background-color:#F0AD4E;
+    padding:0.4rem;
+    padding-left:0.5rem;
+}
